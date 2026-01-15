@@ -122,27 +122,30 @@ ul {
 /* Polaroids */
 .polaroid-frame {
   margin-top: 50px;
-  padding: 70px;         
+  padding: 70px;
   display: flex;
   justify-content: center;
-  gap: 60px;             
+  gap: 60px;
   background: #12001a;
   border: 2px solid #6a00ff;
   border-radius: 14px;
 }
 
 .polaroid {
-  width: 300px;          
+  width: 260px;                 
   background: #ffffff;
-  padding: 20px 20px 45px;
+  padding: 16px 16px 50px;     
   border-radius: 6px;
   text-align: center;
   transition: transform 0.3s ease;
 }
 
+/* FORMATO 3:4 */
 .polaroid img {
   width: 100%;
-  height: auto;          
+  aspect-ratio: 3 / 4;   /* largura:altura */
+  object-fit: cover;    /* corta sem distorcer */
+  border-radius: 4px;
 }
 
 .polaroid span {
