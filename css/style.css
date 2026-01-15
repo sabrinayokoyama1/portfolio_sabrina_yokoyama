@@ -132,9 +132,9 @@ ul {
 }
 
 .polaroid {
-  width: 170px;
+  width: 250px;
   background: #ffffff;
-  padding: 12px 12px 25px;
+  padding: 12px 12px 32px;
   border-radius: 6px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -142,7 +142,7 @@ ul {
 
 .polaroid img {
   width: 100%;
-  height: 150px;
+  height: 226px;
   object-fit: cover;
 }
 
@@ -283,5 +283,6 @@ ul {
   background: #333333;
   transform: translateY(-2px);
 }
+
 
 
