@@ -122,47 +122,45 @@ ul {
 /* Polaroids */
 .polaroid-frame {
   margin-top: 50px;
-  padding: 70px;          
+  padding: 70px;
   display: flex;
   justify-content: center;
-  gap: 60px;             
+  gap: 60px;
   background: #12001a;
   border: 2px solid #6a00ff;
   border-radius: 14px;
 }
 
 .polaroid {
-  width: 340px;         
+  width: 320px;
   background: #ffffff;
-  padding: 24px 24px 50px; 
-  border-radius: 6px;
+  padding: 20px 20px 70px;  /* base maior */
+  border-radius: 8px;
   text-align: center;
   transition: transform 0.3s ease;
 }
 
+/* Foto com proporção de polaroid */
 .polaroid img {
   width: 100%;
-  height: auto;
+  height: 360px;          /* força formato vertical */
+  object-fit: cover;
+  border-radius: 4px;
 }
 
+/* Texto estilo legenda */
 .polaroid span {
   display: block;
-  margin-top: 10px;
-  font-size: 28px;
+  margin-top: 14px;
+  font-size: 26px;
   color: #2a0040;
+  font-weight: 500;
 }
 
-/* Inclinações sutis */ 
-.polaroid-1 { 
-  transform: rotate(-5deg); 
-} 
-
-.polaroid-2 { 
-  transform: rotate(2deg); 
-} 
-.polaroid-3 { 
-  transform: rotate(6deg); 
-}          
+/* Inclinações */
+.polaroid-1 { transform: rotate(-5deg); }
+.polaroid-2 { transform: rotate(2deg); }
+.polaroid-3 { transform: rotate(6deg); }
 
 .polaroid:hover {
   transform: scale(1.05);
@@ -282,3 +280,4 @@ ul {
   background: #333333;
   transform: translateY(-2px);
 }
+
