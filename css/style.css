@@ -8,7 +8,7 @@ body {
 header {
   background: #12001a;
   color: #d6b3ff;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   border-bottom: 1px solid #6a00ff;
 }
@@ -122,19 +122,19 @@ ul {
 /* Polaroids */
 .polaroid-frame {
   margin-top: 50px;
-  padding: 35px;
+  padding: 70px;          
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 60px;             
   background: #12001a;
   border: 2px solid #6a00ff;
   border-radius: 14px;
 }
 
 .polaroid {
-  width: 170px;
+  width: 340px;         
   background: #ffffff;
-  padding: 12px 12px 25px;
+  padding: 24px 24px 50px; 
   border-radius: 6px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -142,14 +142,13 @@ ul {
 
 .polaroid img {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  height: auto;
 }
 
 .polaroid span {
   display: block;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 28px;
   color: #2a0040;
 }
 
@@ -239,6 +238,13 @@ ul {
   transform: translateY(-2px);
 }
 
+/* Header Projetos */
+.projects-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 /* Botão GitHub */
 .github-btn {
   display: inline-block;
@@ -263,7 +269,7 @@ ul {
   display: inline-block;
   margin: 5px;
   padding: 12px 18px;
-  background: #878787;
+  background: #707070;
   color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
