@@ -132,19 +132,19 @@ ul {
 }
 
 .polaroid {
-  width: 260px;                 
+  width: 260px;
   background: #ffffff;
-  padding: 16px 16px 50px;     
+  padding: 16px 16px 50px;
   border-radius: 6px;
   text-align: center;
   transition: transform 0.3s ease;
 }
 
-/* FORMATO 3:4 */
+/* FORMATO QUADRADO 1:1 */
 .polaroid img {
   width: 100%;
-  aspect-ratio: 3 / 4;   /* largura:altura */
-  object-fit: cover;    /* corta sem distorcer */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 4px;
 }
 
@@ -285,3 +285,4 @@ ul {
   background: #333333;
   transform: translateY(-2px);
 }
+
