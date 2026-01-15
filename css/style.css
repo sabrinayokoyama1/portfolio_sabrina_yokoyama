@@ -153,6 +153,13 @@ ul {
   color: #2a0040;
 }
 
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .polaroid span {
+    font-size: 14px;
+  }
+}
+
 /* Inclinações sutis */ 
 .polaroid-1 { 
   transform: rotate(-5deg); 
@@ -283,6 +290,7 @@ ul {
   background: #333333;
   transform: translateY(-2px);
 }
+
 
 
 
