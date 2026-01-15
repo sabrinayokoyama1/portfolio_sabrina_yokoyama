@@ -149,7 +149,7 @@ ul {
 .polaroid span {
   display: block;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #2a0040;
 }
 
@@ -283,6 +283,7 @@ ul {
   background: #333333;
   transform: translateY(-2px);
 }
+
 
 
 
