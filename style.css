@@ -1,0 +1,278 @@
+body {
+  font-family: 'Consolas', 'Courier New', monospace;
+  margin: 0;
+  background: #0b0b12;
+  color: #e6d9ff;
+}
+
+header {
+  background: #12001a;
+  color: #d6b3ff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #6a00ff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #0f0018;
+  border-bottom: 1px solid #6a00ff;
+}
+
+nav a {
+  background: none;
+  border: none;
+  color: #cfa6ff;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  background: #2a0040;
+  color: #ffffff;
+  border-bottom: 2px solid #9b5cff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #0f0018;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(155, 92, 255, 0.3);
+  border: 1px solid #3d005c;
+}
+
+.container::before {
+  content: "> portfolio_sabrina_yokoyama.exe";
+  display: block;
+  color: #9b5cff;
+  margin-bottom: 15px;
+}
+
+h1, h2 {
+  color: #b980ff;
+}
+
+p, li {
+  color: #e6d9ff;
+  line-height: 1.8;
+  animation: fadeIn 1.8s ease forwards;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Foto */
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #9b5cff;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(155, 92, 255, 0.5);
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Balão */
+.speech-bubble {
+  background: #2a0040;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 15px;
+  max-width: 260px;
+  position: relative;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #2a0040 transparent transparent;
+}
+
+/* Polaroids */
+.polaroid-frame {
+  margin-top: 50px;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #12001a;
+  border: 2px solid #6a00ff;
+  border-radius: 14px;
+}
+
+.polaroid {
+  width: 170px;
+  background: #ffffff;
+  padding: 12px 12px 25px;
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.polaroid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.polaroid span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2a0040;
+}
+
+/* Inclinações sutis */ 
+.polaroid-1 { 
+  transform: rotate(-5deg); 
+} 
+
+.polaroid-2 { 
+  transform: rotate(2deg); 
+} 
+.polaroid-3 { 
+  transform: rotate(6deg); 
+}          
+
+.polaroid:hover {
+  transform: scale(1.05);
+}
+
+/* Container para projetos */
+.project-card {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #1A0029;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(155, 92, 255, 0.3);
+  border: 1px solid #3d005c;
+}
+
+.project-card h3 {
+  color: #b980ff;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  margin: 10px 0;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Botões de cabeçalho */
+.header-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header-btn {
+  padding: 6px 12px;
+  background: #6a00ff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(155, 92, 255, 0.5);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.header-btn:hover {
+  background: #9b5cff;
+  transform: translateY(-2px);
+}
+
+/* Botão Download CV */
+.download-btn {
+  display: inline-block;
+  margin: 20px 0 40px;
+  padding: 12px 18px;
+  background: #6a00ff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 12px rgba(155, 92, 255, 0.6);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.download-btn:hover {
+  background: #9b5cff;
+  transform: translateY(-2px);
+}
+
+/* Botão GitHub */
+.github-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 18px;
+  background: #6a00ff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 12px rgba(155, 92, 255, 0.6);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.github-btn:hover {
+  background: #9b5cff;
+  transform: translateY(-2px);
+}
+
+/* Botão ver no GitHub */ 
+.viewgh-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 18px;
+  background: #878787;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 12px rgba(155, 92, 255, 0.6);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.viewgh-btn:hover {
+  background: #333333;
+  transform: translateY(-2px);
+}
